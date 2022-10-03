@@ -50,17 +50,7 @@ function JumpNav({ intl, displayDemographicsLink }) {
           <NavHashLink to="#site-preferences">
             {intl.formatMessage(messages['account.settings.section.site.preferences'])}
           </NavHashLink>
-        </li>
-        <li>
-          <NavHashLink to="#linked-accounts">
-            {intl.formatMessage(messages['account.settings.section.linked.accounts'])}
-          </NavHashLink>
-        </li>
-        <li>
-          <NavHashLink to="#delete-account">
-            {intl.formatMessage(messages['account.settings.jump.nav.delete.account'])}
-          </NavHashLink>
-        </li>
+        </li>               
       </Scrollspy>
     </div>
   );
