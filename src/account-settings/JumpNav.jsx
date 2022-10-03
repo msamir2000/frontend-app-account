@@ -11,39 +11,13 @@ function JumpNav({ intl, displayDemographicsLink }) {
   return (
     <div className="jump-nav">
       <Scrollspy
-        items={[
-          'basic-information',
-          'profile-information',
-          'demographics-information',
-          'social-media',
+        items={[          
           'site-preferences',          
         ]}
         className="list-unstyled"
         currentClassName="font-weight-bold"
       >
-        <li>
-          <NavHashLink to="#basic-information">
-            {intl.formatMessage(messages['account.settings.section.account.information'])}
-          </NavHashLink>
-        </li>
-        <li>
-          <NavHashLink to="#profile-information">
-            {intl.formatMessage(messages['account.settings.section.profile.information'])}
-          </NavHashLink>
-        </li>
-        {getConfig().ENABLE_DEMOGRAPHICS_COLLECTION && displayDemographicsLink
-          && (
-          <li>
-            <NavHashLink to="#demographics-information">
-              {intl.formatMessage(messages['account.settings.section.demographics.information'])}
-            </NavHashLink>
-          </li>
-          )}
-        <li>
-          <NavHashLink to="#social-media">
-            {intl.formatMessage(messages['account.settings.section.social.media'])}
-          </NavHashLink>
-        </li>
+        
         <li>
           <NavHashLink to="#site-preferences">
             {intl.formatMessage(messages['account.settings.section.site.preferences'])}
