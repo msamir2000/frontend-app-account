@@ -69,9 +69,7 @@ class AccountSettingsPage extends React.Component {
       '#profile-information': React.createRef(),
       '#demographics-information': React.createRef(),
       '#social-media': React.createRef(),
-      '#site-preferences': React.createRef(),
-      '#linked-accounts': React.createRef(),
-      '#delete-account': React.createRef(),
+      '#site-preferences': React.createRef(),          
     };
   }
 
@@ -750,25 +748,7 @@ class AccountSettingsPage extends React.Component {
               this.handleSubmit(formId, value || null);
             }}
           />
-        </div>
-
-        <div className="account-section" id="linked-accounts" ref={this.navLinkRefs['#linked-accounts']}>
-          <h2 className="section-heading">{this.props.intl.formatMessage(messages['account.settings.section.linked.accounts'])}</h2>
-          <p>
-            {this.props.intl.formatMessage(
-              messages['account.settings.section.linked.accounts.description'],
-              { siteName: getConfig().SITE_NAME },
-            )}
-          </p>
-          <ThirdPartyAuth />
-        </div>
-
-        <div className="account-section" id="delete-account" ref={this.navLinkRefs['#delete-account']}>
-          <DeleteAccount
-            isVerifiedAccount={this.props.isActive}
-            hasLinkedTPA={hasLinkedTPA}
-          />
-        </div>
+        </div>              
 
       </>
     );
