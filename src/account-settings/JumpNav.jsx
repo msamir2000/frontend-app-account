@@ -16,9 +16,7 @@ function JumpNav({ intl, displayDemographicsLink }) {
           'profile-information',
           'demographics-information',
           'social-media',
-          'site-preferences',
-          'linked-accounts',
-          'delete-account',
+          'site-preferences',          
         ]}
         className="list-unstyled"
         currentClassName="font-weight-bold"
