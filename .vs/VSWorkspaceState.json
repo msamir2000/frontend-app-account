@@ -1,9 +1,10 @@
 {
   "ExpandedNodes": [
     "",
+    "\\public",
     "\\src",
     "\\src\\account-settings"
   ],
-  "SelectedNode": "\\src\\account-settings\\JumpNav.jsx",
+  "SelectedNode": "\\src\\account-settings\\test",
   "PreviewInSolutionExplorer": false
 }
